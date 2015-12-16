@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="iOS/OpenRates.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OpenRates/RatesPage.xaml.cs">
+    <Files>
+      <File FileName="iOS/Main.cs" Line="18" Column="4" />
+      <File FileName="OpenRates/OpenRates.cs" Line="1" Column="1" />
+      <File FileName="OpenRates/RatesListPage.xaml" Line="1" Column="1" />
+      <File FileName="OpenRates/RatesListPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="OpenRates/RatesPage.xaml.cs" Line="67" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/steve/Projects/OpenRates/OpenRates/RatesPage.xaml.cs" line="78" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

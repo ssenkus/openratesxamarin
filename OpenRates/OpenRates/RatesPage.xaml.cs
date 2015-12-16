@@ -65,8 +65,6 @@ namespace OpenRates
                 }
             }
 
-
-
             var x = JsonConvert.DeserializeObject<RatesViewModel>(received);
             App.Rates = new RatesViewModel(){
                 rates = x.rates,
