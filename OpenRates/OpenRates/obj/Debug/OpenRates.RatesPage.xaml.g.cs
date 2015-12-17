@@ -20,13 +20,17 @@ namespace OpenRates {
         private global::Xamarin.Forms.Button callButton;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button stringButton;
+        private global::Xamarin.Forms.Button latestButton;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button currencyButton;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(RatesPage));
             callButton = this.FindByName <global::Xamarin.Forms.Button>("callButton");
-            stringButton = this.FindByName <global::Xamarin.Forms.Button>("stringButton");
+            latestButton = this.FindByName <global::Xamarin.Forms.Button>("latestButton");
+            currencyButton = this.FindByName <global::Xamarin.Forms.Button>("currencyButton");
         }
     }
 }

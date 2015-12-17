@@ -1,13 +1,32 @@
 ﻿<Properties StartupItem="iOS/OpenRates.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OpenRates/RatesPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/6.0.0-34/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets">
     <Files>
-      <File FileName="iOS/Main.cs" Line="18" Column="4" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
       <File FileName="OpenRates/OpenRates.cs" Line="1" Column="1" />
-      <File FileName="OpenRates/RatesListPage.xaml" Line="1" Column="1" />
-      <File FileName="OpenRates/RatesListPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="OpenRates/RatesPage.xaml.cs" Line="67" Column="1" />
+      <File FileName="OpenRates/RatesListPage.xaml" Line="22" Column="32" />
+      <File FileName="OpenRates/RatesListPage.xaml.cs" Line="23" Column="10" />
+      <File FileName="OpenRates/RatesPage.xaml.cs" Line="67" Column="13" />
+      <File FileName="OpenRates/RatesViewModel.cs" Line="10" Column="39" />
+      <File FileName="../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/6.0.0-34/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="4" Column="1" />
+      <File FileName="Droid/packages.config" Line="10" Column="12" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OpenRates" expanded="True">
+            <Node name="OpenRates" expanded="True">
+              <Node name="RatesListPage.xaml" expanded="True" />
+              <Node name="RatesPage.xaml" expanded="True" />
+            </Node>
+            <Node name="OpenRates.Droid" expanded="True" selected="True">
+              <Node name="Packages" expanded="True" />
+            </Node>
+            <Node name="OpenRates.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>

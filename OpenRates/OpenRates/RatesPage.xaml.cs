@@ -19,26 +19,35 @@ namespace OpenRates
             InitializeComponent();
         }
 
-        public void OnRatesList(object sender, EventArgs e)
+        public void OnShowRates(object sender, EventArgs e)
         {
             Navigation.PushAsync(new RatesListPage());
           
         }
 
-        public void OnGotData(object sender, EventArgs e)
+        public void OnGetLatest(object sender, EventArgs e)
         {
-            getRates();
+            getLatest();
        
         }
 
-        private async void  getRates()
+        public void OnGetCurrencies(object sender, EventArgs e)
         {
-            string url = "https://openexchangerates.org/api/latest.json?app_id=c0692641f9374249832959e4ece26813";
-            await httpRequest(url);
+            getCurrencies();
 
         }
 
-        private void addData() {
+        private async void getCurrencies()
+        {
+            string url = "https://openexchangerates.org/api/currencies.json?app_id=c0692641f9374249832959e4ece26813";
+            await httpRequest(url, "currencies");
+        }
+
+        private async void  getLatest()
+        {
+            string url = "https://openexchangerates.org/api/latest.json?app_id=c0692641f9374249832959e4ece26813";
+            await httpRequest(url, "latest");
+
         }
 
         private void ParseData(string jsonData)
@@ -47,7 +56,7 @@ namespace OpenRates
             Debug.WriteLine(parsedJson);
         }
 
-        public async Task<string> httpRequest(string url)
+        public async Task<string> httpRequest(string url, string apiEndpoint)
         {
             Uri uri = new Uri(url);
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
@@ -65,15 +74,26 @@ namespace OpenRates
                 }
             }
 
-            var x = JsonConvert.DeserializeObject<RatesViewModel>(received);
-            App.Rates = new RatesViewModel(){
-                rates = x.rates,
-                license = x.license,
-                disclaimer = x.disclaimer
-            };
-            App.Rates.convertToViewStrings();
-            App.realRates = App.Rates.realRates;
+
+            if (apiEndpoint == "currencies")
+            {
+                var x = JsonConvert.DeserializeObject<Dictionary<string, string>>(received);
+                Debug.WriteLine(x);
+                App.Rates.currencies = x;
+                Debug.WriteLine(App.Rates.currencies);
+
+            }
+            else if (apiEndpoint == "latest")
+            {
+                var x = JsonConvert.DeserializeObject<RatesViewModel>(received);
+                App.Rates.rates = x.rates;
+                App.Rates.license = x.license;
+                App.Rates.disclaimer = x.disclaimer;
+                App.Rates.convertToViewStrings();
+                App.realRates = App.Rates.realRates;
+            }
             return received;
+            
         }
 
 

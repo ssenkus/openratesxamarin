@@ -25,6 +25,9 @@ namespace OpenRates
                 this.realRates.Add(keyValue);
             }
         }
+
+        public Dictionary<string, string> currencies { get; set; }
+
     }
 }
 

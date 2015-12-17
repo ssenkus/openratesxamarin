@@ -17,7 +17,8 @@ namespace OpenRates
         public static List<string> realRates;
         public App()
         {
-            
+
+            Rates = new RatesViewModel();
             MainPage = new NavigationPage(new OpenRates.RatesPage ());
         }
    

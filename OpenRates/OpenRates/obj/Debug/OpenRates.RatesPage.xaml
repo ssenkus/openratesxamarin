@@ -13,8 +13,9 @@
                      HorizontalOptions="FillAndExpand"
                      Orientation="Vertical"
                      Spacing="15">
-            <Button x:Name="callButton" Text="Show Rates" IsEnabled="true" Clicked="OnRatesList" />
-            <Button x:Name="stringButton" Text="Get Currencies" IsEnabled="true" Clicked="OnGotData" />
+            <Button x:Name="callButton" Text="Show Rates" IsEnabled="true" Clicked="OnShowRates" />
+            <Button x:Name="latestButton" Text="Get Latest" IsEnabled="true" Clicked="OnGetLatest" />
+            <Button x:Name="currencyButton" Text="Get Currencies" IsEnabled="true" Clicked="OnGetCurrencies" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
