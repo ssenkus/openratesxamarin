@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Net;
 using Newtonsoft.Json;
@@ -14,14 +15,16 @@ namespace OpenRates
     {
 
         public static RatesViewModel Rates;
-        public static List<string> realRates;
+        public static RatesRepository ratesRepository;
+        public static ObservableCollection<Currency> appCurrencies;
+
         public App()
         {
-
             Rates = new RatesViewModel();
-            MainPage = new NavigationPage(new OpenRates.RatesPage ());
+            ratesRepository = new RatesRepository();
+            MainPage = new NavigationPage(new OpenRates.RatesPage());
         }
-   
+
         protected override void OnStart()
         {
             // Handle when your app starts

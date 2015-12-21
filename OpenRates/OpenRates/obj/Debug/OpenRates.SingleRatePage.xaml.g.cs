@@ -14,19 +14,11 @@ namespace OpenRates {
     using Xamarin.Forms.Xaml;
     
     
-    public partial class RatesPage : global::Xamarin.Forms.ContentPage {
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button callButton;
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button latestButton;
+    public partial class SingleRatePage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            this.LoadFromXaml(typeof(RatesPage));
-            callButton = this.FindByName <global::Xamarin.Forms.Button>("callButton");
-            latestButton = this.FindByName <global::Xamarin.Forms.Button>("latestButton");
+            this.LoadFromXaml(typeof(SingleRatePage));
         }
     }
 }
